@@ -1,3 +1,4 @@
+Autor: Jheimar Alexander Mosquera Sanchez · UNAD · Programación 213023A · Fase 4
 # Software FJ - Gestión de clientes, servicios y reservas
 
 Proyecto en Python (solo biblioteca estándar, sin base de datos) que gestiona
