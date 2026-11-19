@@ -1,0 +1,88 @@
+2026-11-18 21:52:55,273 | INFO     | === Inicio de la simulación ===
+2026-11-18 21:52:55,280 | INFO     | Cliente registrado: CLI-001
+2026-11-18 21:52:55,280 | INFO     | Operación 01 exitosa.
+2026-11-18 21:52:55,281 | DEBUG    | Fin de la operación 01.
+2026-11-18 21:52:55,287 | INFO     | Cliente registrado: CLI-002
+2026-11-18 21:52:55,287 | INFO     | Operación 02 exitosa.
+2026-11-18 21:52:55,288 | DEBUG    | Fin de la operación 02.
+2026-11-18 21:52:55,289 | ERROR    | Operación 03 falló: No se pudo crear el cliente.
+2026-11-18 21:52:55,290 | DEBUG    | Fin de la operación 03.
+2026-11-18 21:52:55,290 | ERROR    | Operación 04 falló: No se pudo crear el cliente.
+2026-11-18 21:52:55,291 | DEBUG    | Fin de la operación 04.
+2026-11-18 21:52:55,292 | ERROR    | Operación 05 falló: No se pudo crear el cliente.
+2026-11-18 21:52:55,294 | DEBUG    | Fin de la operación 05.
+2026-11-18 21:52:55,295 | ERROR    | Operación 06 falló: Ya existe un cliente con ese documento.
+2026-11-18 21:52:55,295 | DEBUG    | Fin de la operación 06.
+2026-11-18 21:52:55,304 | INFO     | Servicio creado: SRV-001
+2026-11-18 21:52:55,304 | INFO     | Operación 07 exitosa.
+2026-11-18 21:52:55,308 | DEBUG    | Fin de la operación 07.
+2026-11-18 21:52:55,309 | INFO     | Servicio creado: SRV-002
+2026-11-18 21:52:55,309 | INFO     | Operación 08 exitosa.
+2026-11-18 21:52:55,309 | DEBUG    | Fin de la operación 08.
+2026-11-18 21:52:55,310 | INFO     | Servicio creado: SRV-003
+2026-11-18 21:52:55,310 | INFO     | Operación 09 exitosa.
+2026-11-18 21:52:55,311 | DEBUG    | Fin de la operación 09.
+2026-11-18 21:52:55,318 | ERROR    | Operación 10 falló: La tarifa debe ser mayor a 0.
+2026-11-18 21:52:55,318 | DEBUG    | Fin de la operación 10.
+2026-11-18 21:52:55,321 | ERROR    | Operación 11 falló: El nivel debe ser 'junior' o 'senior'.
+2026-11-18 21:52:55,321 | DEBUG    | Fin de la operación 11.
+2026-11-18 21:52:55,324 | ERROR    | Operación 12: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\yeima\OneDrive\Escritorio\Yeimar\UNAD\SEMESTRE #4\Programacion\ACTIVIDAD #4\FJ_proyecto\FJ_proyecto\gestor.py", line 89, in ejecutar_operacion
+    resultado = funcion(*args, **kwargs)
+  File "c:\Users\yeima\OneDrive\Escritorio\Yeimar\UNAD\SEMESTRE #4\Programacion\ACTIVIDAD #4\FJ_proyecto\FJ_proyecto\gestor.py", line 47, in crear_servicio
+    servicio = clase(*args, **kwargs)  # una clase abstracta fallaria aqui
+TypeError: Can't instantiate abstract class Servicio without an implementation for abstract methods 'calcular_costo_base', 'describir', 'validar_parametros'
+2026-11-18 21:52:55,374 | DEBUG    | Fin de la operación 12.
+2026-11-18 21:52:55,375 | INFO     | Reserva creada: RES-001
+2026-11-18 21:52:55,375 | INFO     | Operación 13 exitosa.
+2026-11-18 21:52:55,376 | DEBUG    | Fin de la operación 13.
+2026-11-18 21:52:55,376 | ERROR    | Operación 14 falló: La duración no puede ser mayor a 8.
+2026-11-18 21:52:55,384 | DEBUG    | Fin de la operación 14.
+2026-11-18 21:52:55,415 | ERROR    | Operación 15 falló: No existe un cliente con id CLI-999.
+2026-11-18 21:52:55,459 | DEBUG    | Fin de la operación 15.
+2026-11-18 21:52:55,476 | ERROR    | Operación 16 falló: La duración debe ser un número.
+2026-11-18 21:52:55,477 | DEBUG    | Fin de la operación 16.
+2026-11-18 21:52:55,478 | INFO     | Reserva RES-001 confirmada.
+2026-11-18 21:52:55,478 | INFO     | Operación 17 exitosa.
+2026-11-18 21:52:55,479 | DEBUG    | Fin de la operación 17.
+2026-11-18 21:52:55,480 | INFO     | Reserva RES-001 procesada por $171.360,00.
+2026-11-18 21:52:55,480 | DEBUG    | Terminó el intento de procesar RES-001.
+2026-11-18 21:52:55,481 | INFO     | Operación 18 exitosa.
+2026-11-18 21:52:55,481 | DEBUG    | Fin de la operación 18.
+2026-11-18 21:52:55,492 | ERROR    | Fallo al procesar RES-001: RES-001 está PROCESADA: solo se procesan reservas confirmadas.
+2026-11-18 21:52:55,493 | DEBUG    | Terminó el intento de procesar RES-001.
+2026-11-18 21:52:55,493 | ERROR    | Operación 19 falló: No se pudo procesar la reserva RES-001.
+2026-11-18 21:52:55,495 | DEBUG    | Fin de la operación 19.
+2026-11-18 21:52:55,497 | ERROR    | Operación 20 falló: RES-001 está PROCESADA y ya no se puede cancelar.
+2026-11-18 21:52:55,545 | DEBUG    | Fin de la operación 20.
+2026-11-18 21:52:55,559 | INFO     | Reserva creada: RES-002
+2026-11-18 21:52:55,559 | INFO     | Operación 21 exitosa.
+2026-11-18 21:52:55,610 | DEBUG    | Fin de la operación 21.
+2026-11-18 21:52:55,828 | INFO     | Servicio SRV-002 disponible=False
+2026-11-18 21:52:55,828 | INFO     | Operación 22 exitosa.
+2026-11-18 21:52:55,862 | DEBUG    | Fin de la operación 22.
+2026-11-18 21:52:55,935 | ERROR    | Operación 23 falló: El servicio Portátil Workstation no está disponible por ahora.
+2026-11-18 21:52:55,943 | DEBUG    | Fin de la operación 23.
+2026-11-18 21:52:55,946 | INFO     | Reserva RES-002 cancelada.
+2026-11-18 21:52:55,946 | INFO     | Operación 24 exitosa.
+2026-11-18 21:52:55,947 | DEBUG    | Fin de la operación 24.
+2026-11-18 21:52:55,947 | INFO     | Reserva creada: RES-003
+2026-11-18 21:52:55,948 | INFO     | Operación 25 exitosa.
+2026-11-18 21:52:55,957 | DEBUG    | Fin de la operación 25.
+2026-11-18 21:52:55,963 | INFO     | Reserva RES-003 confirmada.
+2026-11-18 21:52:55,963 | INFO     | Operación 26 exitosa.
+2026-11-18 21:52:55,965 | DEBUG    | Fin de la operación 26.
+2026-11-18 21:52:55,976 | ERROR    | Fallo al procesar RES-003: El cupón 'REGALADO' no existe.
+2026-11-18 21:52:55,977 | DEBUG    | Terminó el intento de procesar RES-003.
+2026-11-18 21:52:55,977 | ERROR    | Operación 27 falló: No se pudo procesar la reserva RES-003.
+2026-11-18 21:52:55,977 | DEBUG    | Fin de la operación 27.
+2026-11-18 21:52:55,978 | ERROR    | Fallo al procesar RES-003: El total calculado (0.0) debe ser mayor a cero.
+2026-11-18 21:52:55,978 | DEBUG    | Terminó el intento de procesar RES-003.
+2026-11-18 21:52:55,978 | ERROR    | Operación 28 falló: No se pudo procesar la reserva RES-003.
+2026-11-18 21:52:55,979 | DEBUG    | Fin de la operación 28.
+2026-11-18 21:52:55,980 | INFO     | Reserva RES-003 procesada por $240.975,00.
+2026-11-18 21:52:55,980 | DEBUG    | Terminó el intento de procesar RES-003.
+2026-11-18 21:52:55,980 | INFO     | Operación 29 exitosa.
+2026-11-18 21:52:55,981 | DEBUG    | Fin de la operación 29.
+2026-11-18 21:52:56,008 | INFO     | === Fin de la simulación: el programa siguió activo ===
